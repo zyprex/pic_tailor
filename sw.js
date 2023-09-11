@@ -1,25 +1,32 @@
 let siteCacheName = "pic_tailor";
 
 let assets = [
-  '/',
-  '/pic_tailor.html', '/pic_tailor.js',
-  '/pic_resize.html', '/pic_resize.js',
-  '/pic_cut.html', '/pic_cut.js',
-  '/pic_rotate.html', '/pic_rotate.js',
-  '/pic_color.html', '/pic_color.js',
-  '/pic_filter.html', '/pic_filter.js',
-  '/pic_draw.html', '/pic_draw.js',
-  '/pic_text.html', '/pic_text.js',
-  '/pic_paper.html', '/pic_paper.js',
-  '/style.css',
-  '/i18n.js',
-  '/i18n/',
-  '/i18n/en-US.json',
-  '/i18n/zh-CN.json',
-  '/ext/color_ref.html', '/ext/color_ref.js',
-  '/ext/colordb_material.json', '/ext/colordb_named.json',
-  '/ext/rate_calc.html', '/ext/rate_calc.js',
-];
+  '',
+  'pic_tailor.html', 'pic_tailor.js',
+  'pic_resize.html', 'pic_resize.js',
+  'pic_cut.html'   , 'pic_cut.js',
+  'pic_rotate.html', 'pic_rotate.js',
+  'pic_color.html' , 'pic_color.js',
+  'pic_filter.html', 'pic_filter.js',
+  'pic_draw.html'  , 'pic_draw.js',
+  'pic_text.html'  , 'pic_text.js',
+  'pic_paper.html' , 'pic_paper.js',
+  'style.css',
+  'i18n.js',
+  'i18n/',
+  'i18n/en-US.json',
+  'i18n/zh-CN.json',
+  'ext/',
+  'ext/color_ref.html'       , 'ext/color_ref.js',
+  'ext/colordb_material.json', 'ext/colordb_named.json',
+  'ext/rate_calc.html'       , 'ext/rate_calc.js',
+]
+/* 
+ * TypeError: Failed to execute 'Cache' on 'addAll': Request failed.
+ * Reason: Possible a typo mess it up.
+ */
+.map(i=>`/pic_tailor/${i}`);
+
 
 self.addEventListener("install", function (e) {
   e.waitUntil(
