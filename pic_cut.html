@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Pic Cut</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic_tailor.webp">
+  </head>
+  <body>
+    <h1>Pic Cut</h1>
+    <div class='l'>
+      <label for="inputImg">Image:</label>
+      <input type="file" id="inputImg" accept="image/*" />
+    </div>
+
+    <div class='l'>
+      <fieldset style="display:inline;">
+        <input type="radio" name="mode" id="modeTrim" checked><label for="modeTrim">Trim</label>
+        <input type="radio" name="mode" id="modeCrop"><label for="modeCrop">Crop</label><br/>
+        <span id="fieldTrim">
+          <label for="paramT">T:</label>
+          <input type="number" id="paramT" value="0" min="0" step="1" />
+          <label for="paramB">B:</label>
+          <input type="number" id="paramB" value="0" min="0" step="1" />
+          <label for="paramL">L:</label>
+          <input type="number" id="paramL" value="0" min="0" step="1" />
+          <label for="paramR">R:</label>
+          <input type="number" id="paramR" value="0" min="0" step="1" />
+        </span>
+        <span id="fieldCrop">
+          <label for="paramSX">x:</label>
+          <input type="number" id="paramSX" value="0" min="0" step="1" />
+          <label for="paramSY">y:</label>
+          <input type="number" id="paramSY" value="0" min="0" step="1" />
+          <label for="paramDW">w:</label>
+          <input type="number" id="paramDW" value="100" min="0" step="1" />
+          <label for="paramDH">h:</label>
+          <input type="number" id="paramDH" value="100" min="0" step="1" />
+        </span>
+      </fieldset>
+      <label for="paramMime">Image Format:</label>
+      <select id="paramMime">
+        <option value='jpeg'>jpeg</option>
+        <option value='png'>png</option>
+        <option value='webp'>webp</option>
+      </select>
+    </div>
+    <div class='l'>
+      <button id="btnCut">Cut</button>
+      <button id="btnReset">Reset</button>
+      <button id="btnDownload">Download</button>
+    </div>
+
+    <div id='txtInfo'></div>
+    <canvas id='canvas' width='0' height='0'></canvas>
+
+    <script src='pic_cut.js'></script>
+  </body>
+</html>

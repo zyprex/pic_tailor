@@ -1,0 +1,11 @@
+{
+  "summaryPicTailor": "Rolling, pile up or stitch vertically/horizontally all images.",
+  "summaryPicResize":"Reduce image size by change it's resolution or quality.",
+  "summaryPicCut":"Trim edge from an image or crop a region on image.",
+  "summaryPicRotate":"Rotate an image (90, 180 or 270 degrees).",
+  "summaryPicColor":"Image color picker (RGB, HEX, HSL).",
+  "summaryPicFilter":"Apply some graphic effects on image, like mirror, mosaic or sharpen.",
+  "summaryPicDraw":"Graffiti on image, draw curve or straight line, you can undo every stroke.",
+  "summaryPicText":"Add Text on image, unlimited undo each step.",
+  "summaryPicPaper":"Generate standard paper size (convert mm to px)."
+}

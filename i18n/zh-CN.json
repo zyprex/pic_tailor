@@ -1,0 +1,11 @@
+{
+  "summaryPicTailor":"交错，堆叠或纵向、横向拼接所有图片。",
+  "summaryPicResize":"改变图片大小或其品质。",
+  "summaryPicCut":"修剪图片边缘或裁出一块图形区域。",
+  "summaryPicRotate":"旋转图片（90°，180°，270°）。",
+  "summaryPicColor":"图片拾色器（RGB HEX HSL）。",
+  "summaryPicFilter":"应用一些图像效果，像是镜像，马赛克或者锐化。",
+  "summaryPicDraw":"在图片上涂鸦，画直线或曲线，你可以依序撤消每个笔画。",
+  "summaryPicText":"在图片上添加文字，可无限撤消每个步骤。",
+  "summaryPicPaper":"生成标准尺寸的纸张（毫米到像素转换）。"
+}

@@ -1,0 +1,17 @@
+{
+  "name":"Pic Tailor - common graphic handler",
+  "short_name":"Pic Tailor",
+  "start_url":"index.html",
+  "display":"browser",
+  "background_color":"#FFFFFF",
+  "theme_color":"#888888",
+  "scope": ".",
+  "description":"A bunch of tools for quick edit images",
+  "icons":[
+    {
+      "src":"pic_tailor.webp",
+      "sizes":"127x127",
+      "type":"image/webp"
+    }
+  ]
+}

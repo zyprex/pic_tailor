@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Pic Filter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic_tailor.webp">
+  </head>
+  <body>
+    <h1>Pic Filter</h1>
+    <div class='l'>
+      <label for="inputImg">Image:</label>
+      <input type="file" id="inputImg" accept="image/*" />
+    </div>
+    <div class='l'>
+      <details>
+        <summary>Filter Parameters <sup><a class='help' href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter" target="_blank">[help]</a></sup></summary>
+          <textarea id="paramFilter" style="display:block;" rows="10">blur(0px)
+brightness(100%)
+contrast(100%)
+grayscale(0%)
+hue-rotate(0deg)
+invert(0%)
+opacity(100%)
+saturate(100%)
+sepia(0%)
+      </textarea>
+      <button id="btnUseDefault">Use default</button>
+      </details>
+    </div>
+
+    <div class='l'>
+      <label for="paramEffect">Effect Type:</label>
+      <select id="paramEffect">
+        <option value="origin">--origin--</option>
+        <option value="b&w">Black And White</option>
+        <option value="rgbMask">RGB Mask</option>
+        <option value="emboss">Emboss</option>
+        <option value="snowNoise">Snow Noise</option>
+        <option value="mirror">Mirror</option>
+        <option value="mosaic">Mosaic</option>
+        <option value="sharpen">Sharpen</option>
+      </select>
+      <input id="paramEffectArg" type="number" value="100" />
+      <label for="paramEffectArg" id="paramEffectArgUnit">?</label>
+      <label for="paramMime">Image Format:</label>
+      <select id="paramMime">
+        <option value='jpeg'>jpeg</option>
+        <option value='png'>png</option>
+        <option value='webp'>webp</option>
+      </select>
+    </div>
+    <div class='l'>
+      <button id="btnApply">Apply</button>
+      <button id="btnDownload">Download</button>
+    </div>
+    <canvas id='canvas' width='0' height='0'></canvas>
+    <script src='pic_filter.js'></script>
+  </body>
+</html>

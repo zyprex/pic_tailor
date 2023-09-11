@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Pic Paper</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic_tailor.webp">
+  </head>
+  <body>
+    <h1>Pic Paper</h1>
+    <div class='l'>
+      <label for="paramASize">Paper Size:</label>
+      <select id="paramASize">
+        <!-- size(mm^2)  = (sqrt(2) * this.value) [w] * this.value [h] -->
+        <option value='2378'>4A0</option>
+        <option value='1682'>2A0</option>
+        <option value='1189'>A0</option>
+        <option value='841'>A1</option>
+        <option value='594'>A2</option>
+        <option value='420'>A3</option>
+        <option value='297' selected>A4</option>
+        <option value='210'>A5</option>
+        <option value='148'>A6</option>
+        <option value='105'>A7</option>
+        <option value='74'>A8</option>
+        <option value='52'>A9</option>
+        <option value='37'>A10</option><!-- 26 -->
+        <option value='1414'>B0</option>
+        <option value='1000'>B1</option>
+        <option value='707'>B2</option>
+        <option value='500'>B3</option>
+        <option value='353'>B4</option>
+        <option value='250'>B5</option>
+        <option value='176'>B6</option>
+        <option value='125'>B7</option>
+        <option value='88'>B8</option>
+        <option value='62'>B9</option>
+        <option value='44'>B10</option><!-- 31 -->
+        <option value='1297'>C0</option>
+        <option value='917'>C1</option>
+        <option value='648'>C2</option>
+        <option value='458'>C3</option>
+        <option value='324'>C4</option>
+        <option value='229'>C5</option>
+        <option value='162'>C6</option>
+        <option value='114'>C7</option>
+        <option value='81'>C8</option>
+        <option value='57'>C9</option>
+        <option value='40'>C10</option><!-- 28 -->
+      </select>
+      <label for="paramPPI">PPI:</label>
+      <select id="paramPPI">
+        <option value="72">72</option>
+        <option value="72">72</option>
+        <option value="96">96</option>
+        <option value="150">150</option>
+        <option value="300">300</option>
+        <option value="600">600</option>
+        <option value="720">720</option>
+        <option value="1200">1200</option>
+        <option value="1440">1440</option>
+        <option value="2400">2400</option>
+        <option value="2880">2880</option>
+      </select>
+    </div>
+    <div class='l'>
+      <input type="number" id="paramW" value="0" min="0" step="1" />x
+      <input type="number" id="paramH" value="0" min="0" step="1" />
+      <label>(px)</label>
+      <input type="number" id="paramWmm" value="0" min="0" step="1" />x
+      <input type="number" id="paramHmm" value="0" min="0" step="1" />
+      <label >(mm)</label>
+      <label for="paramColor">Color:</label>
+      <input type="text" id="paramColor" value="#fff">
+      <sup><a class='help' target='_blank' href='ext/color_ref.html'>[color ref]</a></sup>
+    </div>
+    <div class='l'>
+      <label for="paramMime">Image Format:</label>
+      <select id="paramMime">
+        <option value='jpeg'>jpeg</option>
+        <option value='png'>png</option>
+        <option value='webp'>webp</option>
+      </select>
+    </div>
+    <div class='l'>
+      <button id="btnOk">Ok</button>
+      <button id="btnDownload">Download</button>
+    </div>
+    <canvas id='canvasOrigin' width='0' height='0'></canvas>
+    <script src='pic_paper.js'></script>
+  </body>
+</html>

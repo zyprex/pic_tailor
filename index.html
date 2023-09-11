@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Pic Tailor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic_tailor.webp">
+
+    <!-- Meta Tags required for Progressive Web App -->
+    <meta name="apple-mobile-web-app-status-bar" content="black">
+    <meta name="theme-color" content="#888888">
+
+    <!-- Manifest File link -->
+    <link rel="manifest" href="manifest.json">
+
+  </head>
+  <body>
+    <select id="langCtrl">
+      <option value='en-US'>en</option>
+      <option value='zh-CN'>中文</option>
+    </select>
+    <a href="ext/color_ref.html" target="_blank">color ref </a>&nbsp;
+    <a href="ext/rate_calc.html" target="_blank">rate calc </a>
+    <h1><a href='pic_tailor.html'>Pic Tailor</a></h1>
+    <p lang='summaryPicTailor'>Rolling, pile up or stitch vertically/horizontally all images.</p>
+    <h1><a href='pic_resize.html'>Pic Resize</a></h1>
+    <p lang='summaryPicResize'>Reduce image size by change it's resolution or quality.</p>
+    <h1><a href='pic_cut.html'>Pic Cut</a></h1>
+    <p lang='summaryPicCut'>Trim edge from an image or crop a region on image.</p>
+    <h1><a href='pic_rotate.html'>Pic Rotate</a></h1>
+    <p lang='summaryPicRotate'>Rotate an image (90, 180 or 270 degrees).</p>
+    <h1><a href='pic_color.html'>Pic Color</a></h1>
+    <p lang='summaryPicColor'>Image color picker (RGB, HEX, HSL).</p>
+    <h1><a href='pic_filter.html'>Pic Filter</a></h1>
+    <p lang='summaryPicFilter'>Apply some graphic effects on image, like mirror, mosaic or sharpen.</p>
+    <h1><a href='pic_draw.html'>Pic Draw</a></h1>
+    <p lang='summaryPicDraw'>Graffiti on image, draw curve or straight line, you can undo every stroke.</p>
+    <h1><a href='pic_text.html'>Pic Text</a></h1>
+    <p lang='summaryPicText'>Add Text on image, unlimited undo each step.</p>
+    <h1><a href='pic_paper.html'>Pic Paper</a></h1>
+    <p lang='summaryPicPaper'>Generate standard paper size (convert mm to px).</p>
+    <script src="i18n.js"></script>
+    <!-- <script src="autoload.js"></script> -->
+
+    <!-- Script for Register Service Worker -->
+    <script src='sw_register.js'></script>  
+  </body>
+</html>

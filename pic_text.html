@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>Pic Text</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic_tailor.webp">
+  </head>
+  <body>
+    <h1>Pic Text</h1>
+    <div class='l'>
+      <label for="inputImg">Image:</label>
+      <input type="file" id="inputImg" accept="image/*" />
+    </div>
+    <div class='l'>
+      <label for="paramText">Text:</label>
+      <textarea id="paramText" style="display:block;">Hello
+World</textarea>
+    </div>
+    <div class='l'>
+      <label for="paramX">x:</label>
+      <input type="number" id="paramX" value="0">
+      <label for="paramY">y:</label>
+      <input type="number" id="paramY" value="0">
+      <label for="paramFontSize">Font Size (px):</label>
+      <input type="number" id="paramFontSize" value="50">
+      <details style="display:inline;">
+        <summary>Misc size set</summary>
+        <label for="paramLineHeight">Line Height:</label>
+        <input type="number" id="paramLineHeight" value="1" min="0">
+        <label for="paramTextAlign">Text Align:</label>
+        <select id="paramTextAlign">
+          <option value="left">left</option>
+          <option value="center">center</option>
+          <option value="right">right</option>
+        </select>
+        <label for="paramTextBaseLine">Text BaseLine:</label>
+        <select id="paramTextBaseLine">
+          <option value="top">top</option>
+          <option value="middle">middle</option>
+          <option value="bottom">bottom</option>
+        </select>
+      </details>
+    </div>
+
+    <div class='l'>
+      <label for="paramFontColor">Font Color:</label>
+      <input type="text" id="paramFontColor" value="#0f0">
+      <sup><a class='help' target='_blank' href='ext/color_ref.html'>[color ref]</a></sup>
+      <details style="display:inline;">
+        <summary>Misc font set:</summary>
+        <label for="paramFontStyle">Font Style:</label>
+        <select id="paramFontStyle">
+          <option value="normal">normal</option>
+          <option value="italic">italic</option>
+          <option value="oblique">oblique</option>
+        </select>
+        <select id="paramFontVar">
+          <option value="normal">normal</option>
+          <option value="small-caps">small-caps</option>
+        </select>
+        <select id="paramFontWeight">
+          <option value="normal">normal</option>
+          <option value="bold">bold</option>
+          <option value="bolder">bolder</option>
+          <option value="lighter">lighter</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+          <option value="300">300</option>
+          <option value="400">400</option>
+          <option value="500">500</option>
+          <option value="600">600</option>
+          <option value="700">700</option>
+          <option value="800">800</option>
+          <option value="900">900</option>
+        </select>
+        <input type="text" id="paramFontFamily"value="sans-serif">
+        <select id="paramFontFamilyList">
+          <option value="sans-serif">sans-serif</option>
+          <option value="serif">serif</option>
+          <option value="monospace">monospace</option>
+        </select>
+        <input type="checkbox" id="modeStroke">
+        <label for="modeStroke">stroke</label>
+        <input type="number" id="paramStrokeWidth" value="2">
+      </details>
+    </div>
+
+    <div class='l'>
+      <label for="paramDispWidth">Display Width (%):</label>
+      <input type="number" id="paramDispWidth" value="100" min="10" step="10">
+      <label for="paramMime">Image Format:</label>
+      <select id="paramMime">
+        <option value='jpeg'>jpeg</option>
+        <option value='png'>png</option>
+        <option value='webp'>webp</option>
+      </select>
+    </div>
+
+    <div class='l'>
+      <button id="btnUndo">Undo</button>
+      <button id="btnAdd">Add</button>
+      <button id="btnReset">Reset</button>
+      <button id="btnDownload">Download</button>
+    </div>
+    <canvas id='canvasOrigin' width='0' height='0' style="width:100%;"></canvas>
+    <script src='pic_text.js'></script>
+  </body>
+</html>

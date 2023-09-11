@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Rate Calc</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+* {font-family:monospace;}
+    </style>
+  </head>
+  <body>
+    <h3>Rate Calc</h3>
+    w:<input id='paramW' type='number' value='1024' min='0'>px<br/>
+    h:<input id='paramH' type='number' value='720' min='0'>px<br/>
+    <p>Expect Aspect Ratio:</p>
+    <input id='aspectRatioW' type='number' value='2' min='0'>:
+    <input id='aspectRatioH' type='number' value='1' min='0'>
+    <p id='calcResult'></p>
+  </body>
+  <script src='rate_calc.js'></script>
+</html>

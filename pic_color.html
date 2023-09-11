@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Pic Color</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic_tailor.webp">
+  </head>
+  <body>
+    <h1>Pic Color</h1>
+    <div class='l'>
+      <label for="inputImg">Image:</label>
+      <input type="file" id="inputImg" accept="image/*" />
+    </div>
+
+    <div class='l'>
+      <label for="paramDispWidth">Display Width (%):</label>
+      <input type="number" id="paramDispWidth" value="100" min="10" step="10">
+    </div>
+
+    <p>How to Pick: on the PC, click right mouse button; on your phone, long press.</p>
+    <canvas id='canvasOrigin' width='0' height='0' style="width:100%;cursor:crosshair;"></canvas>
+    <div id='floatWindow' style="position:fixed;background:#FFFFFF50;display:none;"></div>
+    <!-- padding bottom -->
+    <div style="height:20em;"></div>
+
+    <script src='pic_color.js'></script>
+  </body>
+</html>

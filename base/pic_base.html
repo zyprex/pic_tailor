@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Pic Base</title>
+    <meta name="descrption" content="A HTML canvas demo.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Pic Base</h1>
+    <div class='l'>
+      <label for="inputImg">Image:</label>
+      <input type="file" id="inputImg" accept="image/*" />
+    </div>
+    <div class='l'>
+      <label for="paramMime">Image Format:</label>
+      <select id="paramMime">
+        <option value='jpeg'>jpeg</option>
+        <option value='png'>png</option>
+        <option value='webp'>webp</option>
+      </select>
+    </div>
+    <div class='l'>
+      <button id="btnDownload">Download</button>
+    </div>
+    <canvas id='canvas' width='0' height='0'></canvas>
+    <script src='pic_base.js'></script>
+  </body>
+</html>

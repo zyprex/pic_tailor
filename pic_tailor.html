@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Pic Tailor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic_tailor.webp">
+  </head>
+  <body>
+    <h1>Pic Tailor</h1>
+    <div class='l'>
+      <label for="inputImg">Images:</label>
+      <input type="file" id="inputImg" accept="image/*" multiple />
+      <input type="checkbox" id="modeAppend" checked />
+      <label for="modeAppend">append</label>
+    </div>
+
+    <div class='l'>
+      <fieldset style="display:inline;">
+      <input type="radio" name="mode" id="modeRoll" checked><label for="modeRoll">Roll</label>
+      <input type="radio" name="mode" id="modePile"><label for="modePile">Pile</label>
+      <input type="radio" name="mode" id="modeTTB"><label for="modeTTB">TTB</label>
+      <input type="radio" name="mode" id="modeLTR"><label for="modeLTR">LTR</label>
+      </fieldset>
+
+      <label for="paramX">X:</label>
+      <input type="number" id="paramX" value="0" min="0" />
+      <label for="paramY">Y:</label>
+      <input type="number" id="paramY" value="0" min="0" />
+
+      <label for="paramMime">Image Format:</label>
+      <select id="paramMime">
+        <option value='jpeg'>jpeg</option>
+        <option value='png'>png</option>
+        <option value='webp'>webp</option>
+      </select>
+    </div>
+
+    <div class='l'>
+      <button id="btnDownload">Download</button>
+    </div>
+
+    <canvas class="pic" id='canvas' width='0' height='0'></canvas>
+
+    <script src='pic_tailor.js'></script>
+  </body>
+</html>
