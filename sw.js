@@ -13,10 +13,8 @@ let assets = [
   'pic_paper.html' , 'pic_paper.js',
   'style.css',
   'i18n.js',
-  'i18n/',
   'i18n/en-US.json',
   'i18n/zh-CN.json',
-  'ext/',
   'ext/color_ref.html'       , 'ext/color_ref.js',
   'ext/colordb_material.json', 'ext/colordb_named.json',
   'ext/rate_calc.html'       , 'ext/rate_calc.js',
@@ -24,6 +22,7 @@ let assets = [
 /* 
  * TypeError: Failed to execute 'Cache' on 'addAll': Request failed.
  * Reason: Possible a typo mess it up.
+ * root URLs (like http://example.com/) must provide an index.html
  */
 .map(i=>`/pic_tailor/${i}`);
 
