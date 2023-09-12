@@ -25,6 +25,7 @@ let assets = [
  * root URLs (like http://example.com/) must provide an index.html
  */
 .map(i=>`/pic_tailor/${i}`);
+// .map(i=>`/${i}`);
 
 
 self.addEventListener("install", function (e) {

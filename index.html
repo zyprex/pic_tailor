@@ -39,10 +39,23 @@
     <p lang='summaryPicText'>Add Text on image, unlimited undo each step.</p>
     <h1><a href='pic_paper.html'>Pic Paper</a></h1>
     <p lang='summaryPicPaper'>Generate standard paper size (convert mm to px).</p>
+
+    <footer>
+      <button onclick="clearSiteCache()">Clear Site Cache</button>
+      <a target="_blank" href="https://github.com/zyprex/pic_tailor">Source Code</a>
+      <script type='application/javascript'>
+        function clearSiteCache() {
+          caches.delete('pic_tailor').then((ok) => {
+            if (ok) location.reload()
+          });
+        }
+      </script>
+    </footer>
+
     <script src="i18n.js"></script>
     <!-- <script src="autoload.js"></script> -->
 
     <!-- Script for Register Service Worker -->
-    <script src='sw_register.js'></script>  
+    <script src='sw_register.js'></script>
   </body>
 </html>

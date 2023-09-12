@@ -8,6 +8,7 @@ Supported image formats: png, jpg, webp.
 Important to know:
 
 - Based on JS canvas API.
+- Storage used about 150kB.
 - Designed for 100% offline use. (thanks to PWA's service worker)
 - Some parameters only apply after you keyboard focus lost.
 - Mobile browser should work the same as desktop browser, but may inconvenient.
@@ -42,11 +43,11 @@ but not novice friendly. To become an expert of those things,
 are not my purpose. I'm struggle in learn, forgot, and
 learn again.
 
-Search on Internet for long times,  I hardly found online tool that:
+Search on Internet for long times,  I could hardly found online tool that:
 
 1. Respect user's privacy.
 2. Short loading time
-3. Small memory cost.
+3. Low memory cost.
 4. Simple and intuitive interface.
 5. Ad-free.
 

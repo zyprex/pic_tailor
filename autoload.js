@@ -1,3 +1,7 @@
+/* Description: auto reload when file length change
+ * Usage: 
+ *   Include this script to any html pages
+ * */
 let headersList = new Set();
 setInterval(function(){
   let path = window.location.href;

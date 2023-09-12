@@ -1,3 +1,26 @@
+/* Description: simple script for static site i18n
+ * Usage:
+ *  Include this script to any html pages
+ * --- HTML element ---
+ *  <select id="langCtrl">
+ *    <option value='en-US'>en</option>
+ *    <option value='zh-CN'>中文</option>
+ *  </select>
+ *
+ * --- HTML tag ---
+ *  <p lang="langKey">...</p>
+ *
+ * --- JSON ---
+ *  i18n/en-US.json
+ *  {
+ *    "langKey": "Language for en-US"
+ *  }
+ *  i18n/zh-CN.json
+ *  {
+ *    "langKey": "Language for zh-CN"
+ *  }
+ *
+ * */
 let prefLangList = ['en-US', 'zh-CN'];
 let defaultLang = 'en-US';
 let prefLang = sessionStorage.getItem('prefLang');
